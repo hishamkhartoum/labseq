@@ -15,14 +15,19 @@ You can run your application in dev mode that enables live coding using:
 The application can be packaged using:
 
 ```shell script
-./mvnw package
+./mvnw clean package
+```
+Then:
+
+```shell script
+ docker build -f .\src\main\docker\Dockerfile.jvm -t quarkus/quarkus-docker-jvm .
 ```
 
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+Then:
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
-
+```shell script
+ docker run -i --rm -p 8080:8080 quarkus/quarkus-docker-jvm
+```
 
 ## Provided Code
 
