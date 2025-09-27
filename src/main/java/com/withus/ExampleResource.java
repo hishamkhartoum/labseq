@@ -11,7 +11,6 @@ import java.math.BigInteger;
 @Path("/labseq")
 public class ExampleResource {
 
-
     private static final int[] val = {0, 1, 0, 1};
 
     @GET
