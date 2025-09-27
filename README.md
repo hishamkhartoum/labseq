@@ -28,4 +28,4 @@ The application is now runnable using `java -jar target/quarkus-app/quarkus-run.
 
 ### REST
 
-You can run the code by easily navigate to: http://localhost:8080/labseq/100000
+You can run the code by easily navigate to: [http://localhost:8080/q/swagger-ui](http://localhost:8080/q/swagger-ui)
